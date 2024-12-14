@@ -1,7 +1,13 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-WEBEX_TEAMS_TOKEN = "NjhkNDViZGYtMjJjZi00OWUzLTgxMDYtODM0MGVlMzQ2YjE0NmE0ZDI2OWEtNjdm_P0A1_652b5f1d-9846-4334-8b83-52d9cf3b9b81"
-ROOM_ID = "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vYzMyMzJjNzAtYmEzNS0xMWVmLTliNTktNjM1ZTdlOTNmMTEw"
+# Load the .env file
+load_dotenv()
+
+# Fetch the variables from the .env file
+WEBEX_TEAMS_TOKEN = os.getenv("WEBEX_TEAMS_TOKEN")
+ROOM_ID = os.getenv("ROOM_ID")
 
 def send_webex_message(message):
     url = "https://webexapis.com/v1/messages"
