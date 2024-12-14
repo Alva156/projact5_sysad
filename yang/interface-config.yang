@@ -1,0 +1,22 @@
+module interface-config {
+    namespace "urn:interface-config";
+    prefix ic;
+
+    revision "2024-12-14" {
+        description "Interface configuration model.";
+    }
+
+    container interfaces {
+        list interface {
+            key "name";
+            leaf name {
+                type string;
+                description "Name of the interface.";
+            }
+            leaf description {
+                type string;
+                description "Description of the interface.";
+            }
+        }
+    }
+}
