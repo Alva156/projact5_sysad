@@ -1,7 +1,7 @@
 import requests
 
-WEBEX_TEAMS_TOKEN = "your_webex_bot_token"
-ROOM_ID = "your_room_id"
+WEBEX_TEAMS_TOKEN = "NjhkNDViZGYtMjJjZi00OWUzLTgxMDYtODM0MGVlMzQ2YjE0NmE0ZDI2OWEtNjdm_P0A1_652b5f1d-9846-4334-8b83-52d9cf3b9b81"
+ROOM_ID = "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vYzMyMzJjNzAtYmEzNS0xMWVmLTliNTktNjM1ZTdlOTNmMTEw"
 
 def send_webex_message(message):
     url = "https://webexapis.com/v1/messages"

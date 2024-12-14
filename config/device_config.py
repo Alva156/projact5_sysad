@@ -1,5 +1,5 @@
 DEVICE = {
-    "host": "192.168.1.1",
+    "host": "127.0.0.1",
     "port": 830,
     "username": "admin",
     "password": "password",
